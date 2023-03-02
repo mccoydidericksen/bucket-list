@@ -4,7 +4,6 @@ function BucketForm(props) {
   const [input, setInput] = useState('');
   let [eagerness, setEagerness] = useState('');
 
-  // TODO: Use this array in the return statement below
   const eagernessLevel = ['high', 'medium', 'low']
 
   const handleSubmit = (e) => {

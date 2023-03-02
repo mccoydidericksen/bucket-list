@@ -13,9 +13,9 @@ function Bucket(props) {
   const submitUpdate = (value) => {
 
     // TODO: Write logic to update the `edit` value in state after a user updates an entry in the list
-
+    props.editBucketItem(value.id, value)
     // TODO: Set the key:value pairs in the `edit` object back to empty strings
-
+    setEdit({id: null, value: '', eagerness: ''})
   };
 
   // If the user is attempting to edit an item, render the bucket form with the edit variable passed as a prop
